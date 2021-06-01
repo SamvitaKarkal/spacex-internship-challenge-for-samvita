@@ -8,13 +8,13 @@ const TableHeader = () => {
         className="w-1 px-6 py-3 text-xs tracking-wider
         text-center">No:</th>
     <th 
-        className="w-1/4 px-6 py-3 text-xs tracking-wider
+        className="w-1/2 px-6 py-3 text-xs tracking-wider
         text-center">Launched (UTC)</th>
     <th 
-        className="w-1/4 px-6 py-3 text-xs tracking-wider
+        className="w-1/2 px-6 py-3 text-xs tracking-wider
         text-center">Location</th>
     <th 
-        className="w-1/3 px-6 py-3 text-xs tracking-wider
+        className="w-1/2 px-6 py-3 text-xs tracking-wider
         text-center">Mission</th>
     <th 
         className="w-1/2 px-10 py-3 text-xs tracking-wider
