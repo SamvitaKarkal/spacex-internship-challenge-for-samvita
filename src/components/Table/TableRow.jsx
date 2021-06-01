@@ -1,10 +1,9 @@
 import React from "react";
 
-const TableRow = ({info, launchDetails}) => {
+const TableRow = ({rowData, no, launchDetails}) => {
   return (
     <tbody className="bg-white divide-y">
-      {info.map((data, no) => (
-      <tr key={data.id} 
+      <tr key={rowData.id} 
         onClick={()=>launchDetails(no)}  
         className="cursor-pointer text-sm font-small
         leading-5 whitespace-no-wrap">
@@ -18,34 +17,34 @@ const TableRow = ({info, launchDetails}) => {
             className="px-6 py-4 text-sm font-small
             leading-5 text-bb-gray whitespace-no-wrap"
           >
-            {data.launch_date_utc}
+            {rowData.launch_date_utc}
           </td>
           <td
             className="px-6 py-4 text-sm font-small
             leading-5 text-bb-gray whitespace-no-wrap"
           >
-            {data.launch_site.site_name}
+            {rowData.launch_site.site_name}
           </td>
           <td
             className="px-6 py-4 text-sm font-small
             leading-5 text-bb-gray whitespace-no-wrap"
           >
-            {data.mission_name}
+            {rowData.mission_name}
           </td>
           <td
             className="px-6 py-4 text-sm font-small
             leading-5 text-bb-gray whitespace-no-wrap"
           >
-            {data.rocket.second_stage.payloads[0].orbit}
+            {rowData.rocket.second_stage.payloads[0].orbit}
           </td>        
           <td>  
-          {(data.launch_success == null) ? 
+          {(rowData.launch_success == null) ? 
             <span 
             className="bg-blue-300 text-blue-700 font-bold w-1 text-center px-2 py-1 rounded-full"
             >
             Upcoming
             </span>
-           : data.launch_success ? 
+           : rowData.launch_success ? 
             <span 
             className="bg-green-200 text-green-700 font-bold w-1 text-center px-2 py-1 rounded-full"
             >
@@ -63,10 +62,9 @@ const TableRow = ({info, launchDetails}) => {
             className="px-6 py-4 text-sm font-small
             leading-5 text-bb-gray whitespace-no-wrap"
           >
-            {data.rocket.rocket_name}
+            {rowData.rocket.rocket_name}
           </td>
         </tr>
-      ))}
     </tbody>
   );
 };

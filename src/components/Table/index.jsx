@@ -11,16 +11,16 @@ const Table = ({info, status, launchDetails}) => {
         <div className="min-w-full py-2 align-middle sm:px-6 lg:px-8">
           <table className="table items-center mr-20">
             <TableHeader />
-            {
+            {info.map((rowData, no) => (
               status === 'all' ? 
-              <TableRow info={info} launchDetails={launchDetails}/> :
+              <TableRow rowData={rowData} no={no} launchDetails={launchDetails}/> :
               (
-                status === 'success' ? info.launch_success === true : 
-                status === 'failed' ? info.launch_success === false : 
-                info.launch_success === null 
-              ) &&  
-              <TableRow info={info} launchDetails={launchDetails}/>            
-            }
+                status === 'success' ? rowData.launch_success === true : 
+                status === 'failed' ? rowData.launch_success === false : 
+                rowData.launch_success === null 
+              ) && 
+              <TableRow rowData={rowData} no={no} launchDetails={launchDetails}/> 
+            ))}
           </table>
         </div>
       </div>
