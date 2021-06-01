@@ -6,10 +6,10 @@ import TableRow from "./TableRow";
 const Table = ({info, status, launchDetails}) => {
 
   return (
-    <div className="flex flex-col mt-10">
-      <div className="my-2 overflow-x-auto sm:-mx-20 lg:-mx-2">
-        <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-          <table className="divide-y divide-gray-200 table">
+    <div className="mt-10">
+      <div className="my-2 overflow-x-auto sm:-mx-10 lg:-mx-10">
+        <div className="min-w-full py-2 align-middle sm:px-6 lg:px-8">
+          <table className="table items-center mr-20">
             <TableHeader />
             {
               status === 'all' ? 

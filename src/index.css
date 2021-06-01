@@ -36,9 +36,8 @@ body {
 .table {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-content: center;
   padding: 0px;
-
   position: absolute;
   top: 164px;
   background: #FFFFFF;

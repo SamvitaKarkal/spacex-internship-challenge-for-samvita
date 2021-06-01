@@ -31,17 +31,21 @@ const Dashboard = () => {
     })
   }
 
+  const handleChange = (nextPage) => {
+    setPage(nextPage);
+  }
+
   useEffect(() => {
     fetchData()
   },[])
 
   if (loading) {
-    return <PageLoader />;
+    return <PageLoader page={page} setPage={setPage} />;
   }
 
   return (
     <Container>
-      <LaunchFilter setPage={setPage}/>
+      <LaunchFilter handleChange={handleChange}/>
       {page === 'all' && 
       <Table info={info} launchDetails={launchDetails} status='all'/>}
       {page === 'success' && 
