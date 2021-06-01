@@ -14,7 +14,7 @@ const LaunchFilter = ({handleChange}) => {
           <option value='success'>Successful Launches</option>
           <option value='failed'>Failed Launches</option>
         </select>
-        <i class="ri-arrow-drop-down-line ri-2x"/>     
+        <i className="ri-arrow-drop-down-line ri-2x"/>     
       </div>
     </div>
   )
