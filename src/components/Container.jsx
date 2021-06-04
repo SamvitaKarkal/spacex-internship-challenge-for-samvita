@@ -4,9 +4,11 @@ import PropTypes from "prop-types";
 const Container = ({ children }) => {
   return (
     <>
-      <div className="px-4 py-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex flex-col max-w-3xl mx-auto">{children}</div>
-      </div>
+      <div className="flex mt-10 container md:ml-5 lg:ml-20 lg:pl-20">
+          <div className="mx-auto max-w-4xl">
+            {children}
+          </div>
+        </div>
     </>
   );
 };

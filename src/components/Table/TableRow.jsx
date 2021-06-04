@@ -1,13 +1,13 @@
 import React from "react";
 
-const TableRow = ({rowData, count}) => {
+const TableRow = ({rowData}) => {
   return (
     <>
       <td
         className="px-6 py-4 text-sm font-small
         leading-5 whitespace-no-wrap"
       >
-        {count+1}
+        {rowData.flight_number}
       </td>
       <td
         className="px-6 py-4 text-sm font-small

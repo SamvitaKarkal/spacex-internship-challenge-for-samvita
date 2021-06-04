@@ -16,30 +16,12 @@ body {
 
 .logo {
   position: relative;
-  width: 260px;
+  width: 100%;
   height: 72px;
   margin: auto;
-  font-family: 'Play', sans-serif;
-}
-
-.button {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  position: absolute;
-  height: 16px;
-  top: 120px;
-  left:65%
 }
 
 .table {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  position: absolute;
-  top: 164px;
   background: #FFFFFF;
   border: 1px solid #E4E4E7;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
@@ -47,27 +29,7 @@ body {
 }
 
 .table-header {
-  position: static;
-  height: 40px;
   background: #F4F5F7;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  width: 100%
-}
-
-/* table td,
-table th {
-  width: 136px !important;
-} */
-
-.table-row{
-  position: static;
-  height: 53px;
-}
-
-.contain{
-  width: 966px;
 }
 
 .modal{
@@ -89,3 +51,6 @@ table th {
   background-color : rgba(0,0,0,.7);
   z-index : 1000
 }
+
+
+

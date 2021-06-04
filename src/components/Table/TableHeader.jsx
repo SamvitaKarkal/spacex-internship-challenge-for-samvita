@@ -1,9 +1,10 @@
 import React from "react";
 
 const TableHeader = () => {
+    
   return (
     <thead className="w-full">
-    <tr className="table-header">
+    <tr className="table-header" >
     <th 
         className="w-1 px-6 py-3 text-xs text-center tracking-wider
         ">No:</th>

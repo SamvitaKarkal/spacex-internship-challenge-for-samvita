@@ -6,10 +6,10 @@ import TableRow from "./TableRow";
 const Table = ({info, status, launchDetails}) => {
 
   return (
-    <div className="flex flex-col mt-10">
-      <div className="my-2 overflow-x-auto sm:-mx-10 lg:-mx-10">
-        <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-          <table className="divide-y divide-gray-200 table items-center mr-20 table-auto">
+    <div className="flex flex-col ml-5 lg:mx-12 box-shadow-4xl">
+      <div className="sm:-mx-5 lg:-mx-10">
+        <div className="inline-block py-5 sm:-px-6 lg:-px-10 overflow-hidden">
+          <table className="min-w-full divide-y divide-gray-200 table">
             <TableHeader />
             <tbody className="bg-white divide-y">
             {info.map((rowData, count) => (
